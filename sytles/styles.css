@@ -17,3 +17,9 @@ body {
 .user-statement {
     margin-left: auto;
 }
+
+#prompt {
+    width: 100%;
+    border: 1px solid #aaa;
+    background-color: #fff;
+}

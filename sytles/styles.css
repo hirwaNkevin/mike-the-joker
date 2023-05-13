@@ -13,3 +13,7 @@ body {
     max-width: 50%;
     background-color: #fff;
 }
+
+.user-statement {
+    margin-left: auto;
+}

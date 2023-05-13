@@ -4,6 +4,8 @@ body {
 
 #chat {
     border: 1px solid;
+    max-width: 80%;
+    margin: auto;
 }
 
 .statement {

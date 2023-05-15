@@ -1,10 +1,16 @@
 function respond(message){
-    document.getElementById("chat-messages").innerHTML='<p class="statement">'+message+'</p>';
+    let statement = document.createElement("p");
+    statement.className= "statement";
+    statement.innerHTML = message;
+    document.getElementById("chat-messages").appendChild(statement);
 }
 
 respond("Hello!")
 
 function ask(prompt){
-    document.getElementById("chat-messages").innerHTML='<p class="user-statement statement">'+prompt+'</p>';
+    let statement = document.createElement("p");
+    statement.className= "statement user-statement";
+    statement.innerHTML = prompt;
+    document.getElementById("chat-messages").appendChild(statement);
     document.getElementById('prompt-message').value = "";
 }

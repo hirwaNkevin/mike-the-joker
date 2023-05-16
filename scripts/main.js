@@ -1,8 +1,3 @@
-
-respond("Hi, I'm Mike!")
-respond("I am supposed to make you laugh in the seconds displayed.")
-respond("Are you ready?!")
-
 function respond(message){
     let statement = document.createElement("p");
     statement.className= "statement";
@@ -10,11 +5,18 @@ function respond(message){
     document.getElementById("chat-messages").appendChild(statement);
 }
 
-function ask(prompt){
+function ask(user_prompt){
     let statement = document.createElement("p");
     statement.className= "statement user-statement";
-    statement.innerHTML = prompt;
+    statement.innerHTML = user_prompt;
     document.getElementById("chat-messages").appendChild(statement);
     document.getElementById('prompt-message').value = "";
-    return prompt;
+    return user_prompt;
 }
+
+    respond("Hi, I'm Mike!")
+    respond("I am supposed to make you laugh in the seconds displayed.")
+    respond("Are you ready?!")
+    if(ask(user_prompt)[0] == 'y'){
+        respond("Great. Let's Gooooo!")
+    }

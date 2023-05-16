@@ -16,4 +16,5 @@ function ask(prompt){
     statement.innerHTML = prompt;
     document.getElementById("chat-messages").appendChild(statement);
     document.getElementById('prompt-message').value = "";
+    return prompt;
 }

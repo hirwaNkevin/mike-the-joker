@@ -9,8 +9,10 @@ function ask(user_prompt){
     let statement = document.createElement("p");
     statement.className= "statement user-statement";
     statement.innerHTML = user_prompt;
-    document.getElementById("chat-messages").appendChild(statement);
-    document.getElementById('prompt-message').value = "";
+    if(document.getElementById('prompt-message').value != ""){
+        document.getElementById("chat-messages").appendChild(statement);
+        document.getElementById('prompt-message').value = "";
+    }
     return user_prompt;
 }
 

@@ -19,6 +19,6 @@ function ask(user_prompt){
     respond("Hi, I'm Mike!")
     respond("I am supposed to make you laugh in the seconds displayed.")
     respond("Are you ready?!")
-    if(ask(user_prompt)[0] == 'y'.toLocaleLowerCase()){
-        respond("Great. Let's Gooooo!")
-    }
+    // if(ask(user_prompt)[0] == 'y'.toLocaleLowerCase()){
+    //     respond("Great. Let's Gooooo!")
+    // }

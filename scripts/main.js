@@ -22,3 +22,9 @@ function ask(user_prompt){
     // if(ask(user_prompt)[0] == 'y'.toLocaleLowerCase()){
     //     respond("Great. Let's Gooooo!")
     // }
+    let timer = document.getElementById("timer");
+    timer.innerHTML = 60;
+    do{
+        this.setInterval()
+    }
+    while(timer.innerHTML>0);
